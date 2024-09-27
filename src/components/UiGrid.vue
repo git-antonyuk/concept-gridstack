@@ -1,6 +1,6 @@
 <script setup lang="ts">
   import { GridStack } from 'gridstack';
-  import { onBeforeUnmount, onMounted, ref, watch, nextTick } from 'vue';
+  import { onBeforeUnmount, onMounted, watch, nextTick } from 'vue';
   import { IGridStackWidgetExtended } from '@/types';
 
   export interface IProps {
