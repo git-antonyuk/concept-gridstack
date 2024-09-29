@@ -9,10 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "grid-layout-plus": "^1.0.5",
     "gridstack": "^10.3.1",
     "normalize.css": "^8.0.1",
     "sass": "^1.79.3",
-    "vue": "^3.4.37"
+    "vue": "^3.4.37",
+    "vue3-grid-layout-next": "^1.0.7"
   },
   "devDependencies": {
     "@types/node": "^22.7.3",
