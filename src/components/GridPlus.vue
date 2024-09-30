@@ -2,7 +2,7 @@
   import { reactive } from 'vue';
   import DynamicComponent from '@/components/DynamicComponent.vue';
 
-  import { GridLayout, GridItem } from 'grid-layout-plus';
+  import { GridLayout } from 'grid-layout-plus';
 
   const layout = reactive([
     { x: 0, y: 0, w: 2, h: 2, i: '0', static: false },
@@ -34,9 +34,7 @@
       <h1>Grids Plus example:</h1></a
     >
     <GridLayout v-model:layout="layout" :row-height="30">
-      <template #item="{ item }">
-        <DynamicComponent componentKey="widget" :componentProps="{}" />
-      </template>
+      <DynamicComponent componentKey="widget" :componentProps="{}" />
     </GridLayout>
   </div>
 </template>
