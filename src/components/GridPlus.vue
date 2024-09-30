@@ -34,7 +34,9 @@
       <h1>Grids Plus example:</h1></a
     >
     <GridLayout v-model:layout="layout" :row-height="30">
-      <DynamicComponent componentKey="widget" :componentProps="{}" />
+      <template #item>
+        <DynamicComponent componentKey="widget" :componentProps="{}" />
+      </template>
     </GridLayout>
   </div>
 </template>
